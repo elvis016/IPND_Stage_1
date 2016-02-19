@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>Stage 1 HW</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<!-- Bootstrap CSS-->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Self defined CSS-->
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,700,600' rel='stylesheet' type='text/css'>
+		<!-- Google Fonts-->
+	</head>
+	<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				 <header>
+    					<h2 class="text-center">Introduction to JavaScript</h2>
+    					<p class="text-justify">To give you an introduction to JavaScript, which is the programming language of the web. To serve as a quick refresher and review of important programming concepts like variables and data types.</p>
+  				</header>
+				<ul>
+					<li>The Easy Way (Put JS directly into your HTML file)</li>
+					<p class="text-justify">Add your JavaScript inside of a &lt;script&gt; tag (with a closing &lt;/script&gt; too).
+        					This example shows how to add JavaScript directly to HTML<br>
+        					&lt;head&gt;<br>
+        					&lt;script&gt;<br>
+        					    function myFunction() {<br>
+        					        document.getElementById(&quot;demo&quot;).innerHTML = &quot;Paragraph changed.&quot;;<br>
+        					    }
+        					&lt;/script&gt;<br>
+        					&lt;/head&gt;<br>
+        					</p>
+					<li>The Better Way (Write JS in a separate .js file)</li>
+					<p class="text-justify">This is a better way to include JavaScript since it lets you keep your JavaScript separate from your HTML. Usually, most JavaScript code is put into an external file, which is attached to HTML, like this:<br>
+					&lt;script src=&quot;/path/to/script.js&quot;&gt;&lt;/script&gt;
+    					</p>
+				</ul>
+			</div>
+			<div class="col-md-6">
+				 <header>
+    					<h2 class="text-center">What is JSON?</h2>
+    					<p class="text-justify">JavaScript Object Notation. JSON is a popular and simple format for storing and transferring nested or hierarchal data. It's so popular that most other programming languages have libraries capable of parsing and writing JSON (like Python's JSON library). Internet GET and POST requests frequently pass data in JSON format. JSON allows for objects (or data of other types) to be easily encapsulated within other objects. See the MDN or JSON.org for more details.</p>
+  				</header>
+				<ul>
+					<li>Why should I lint my JSON?</li>
+					<p class="text-justify">With a mix of nested curly braces, square brackets and commas, it's easy to make mistakes with JSON. And mistakes mean bugs. Seriously, I mess up JSONs all the time. You might even be able to spot a bug in one of my JSONs in a video in this course...If you're generating JSON by hand, you should copy and paste your code into a JSON linter like jsonlint.com to quickly and easily find syntax errors. A linter is a piece of software that analyzes code for syntax errors. Some text editors, like Sublime Text, will automatically lint (or highlight) most syntax errors. But a JSON linter won't miss any syntax errors and you can rest assured that your JSONs will be properly formatted.
+        					</p>
+					<li><a href="http://en.wikipedia.org/wiki/JSON">JSON Wikipedia page</a></li>
+					<li><a href="http://docs.python.org/library/json.html">Json python package</a></li>
+					<li>Communicating between two machines</li>
+						<ol>
+							<li>SOAP (micorsoft)</li>
+							<li>Protol buffers (google)</li>
+							<li>Thrift (facebooK)</li>
+							<li>Plain-text, custom formats</li>
+							<li>XML</li>
+							<li>JSON</li>
+						</ol>
+					<li>How to be a good citizen on the Internect</li>
+						<ol>
+							<li>Sending proper user-agent</li>
+							<li>Rate-limiting yourself (time.sleep(1))</li>
+							<li>Using common protocols and data formats</li>
+						</ol>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>

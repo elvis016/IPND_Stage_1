@@ -88,6 +88,16 @@ class ResourcePage(Handler):
         # render html.html
         self.render("resource.html")
 
+class ExplorePage(Handler):
+    def get(self):
+        # render html.html
+        self.render("explore.html")
+
+class JavascriptPage(Handler):
+    def get(self):
+        # render html.html
+        self.render("javascript.html")
+
 class AppEngPage(Handler):
     def get(self):
         # Get name of forum
@@ -193,5 +203,7 @@ app = webapp2.WSGIApplication([
     ("/python", PythonPage),
     ("/resource", ResourcePage),
     ("/appeng", AppEngPage),
+    ("/javascript", JavascriptPage),
+    ("/explore", ExplorePage),
     ("/sign", PostForum)
     ], debug=True)
